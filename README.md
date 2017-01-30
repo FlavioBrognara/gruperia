@@ -21,7 +21,6 @@ So far I'm working on a CRUD with Firebase, and I need to implement the authenti
 
 - Theres no depedencies to download
 - The Firebase have my Config setup (with token, URLs, etc.). So you need to change that to see it working
--
 
 
 
