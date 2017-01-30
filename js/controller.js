@@ -12,13 +12,16 @@ angular.module('myApp',["firebase" ])
 
   var db = firebase.database();
 
-  $scope.user={email:'',password:''}
+  /* $scope.user={email:'',password:''} */
 
-  $scope.add = function(){
-    db.ref('users').push({
-      email: $scope.user.email,
-      password: $scope.user.password
+  $scope.addGroup = function(){
+    db.ref('Groups').push({
+      Nome: $scope.app.nome,
+      Etc: $scope.app.etc,
+      Categoria: $scope.app.categoria,
+      Descrição: $scope.app.descricao
     });
+    alert("Criado com sucesso!");
   }
 
 
